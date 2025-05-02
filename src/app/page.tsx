@@ -7,7 +7,7 @@ import Testimonials from "./Components/Testimonals";
 import Timeline from "./Components/Timeline";
 import WhatWeDo from "./Components/Whatwedo";
 import YourGrowth from "./Components/YourGrowth";
-import ServicesPage from './services/page';
+
 
 
 
@@ -22,7 +22,6 @@ export default function Home() {
      <CaseStudy />
      <Timeline />
      <Testimonials />
-      <ServicesPage />
      {/* <Blogs /> */}
 
     </div>
