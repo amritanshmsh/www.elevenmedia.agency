@@ -7,17 +7,20 @@ export default function GetAudited() {
         {/* Left content */}
         <div>
           <p className="text-purple-700 uppercase tracking-widest font-semibold mb-4">
-            Top Rated Agency | No Strings Audit
+            Free Audit | No Commitments
           </p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-            Most Marketing Budgets Are Wasted—Let’s Fix That
+            Stop Wasting Your Marketing Budget. Let’s Transform It.
           </h2>
+          <p className="text-lg text-gray-600 mb-4">
+            Most businesses unknowingly waste <span className="font-bold">over 76% of their marketing spend</span> on campaigns that don’t convert.
+            We dive deep into your strategy, uncover leaks, and deliver an action plan — all at zero cost.
+          </p>
           <p className="text-lg text-gray-600 mb-8">
-            After countless audits, we’ve found that <span className="font-bold">76% of marketing spend goes to waste</span>.
-            We’ll show you exactly where yours is leaking — and how to fix it fast.
+            Get clarity on where your marketing dollars are going, which efforts are underperforming, and exactly how to optimize for rapid growth.
           </p>
           <button className="px-8 py-4 bg-purple-700 hover:bg-purple-800 text-white font-semibold rounded-lg shadow transition duration-300">
-            Get Your Free Marketing Audit
+            Claim Your Free Marketing Audit
           </button>
         </div>
 
@@ -32,7 +35,7 @@ export default function GetAudited() {
           <div className="relative z-10 border-4 border-purple-300 rounded-xl shadow-lg p-2 md:p-4 max-w-lg w-full">
             <img
               src="/digital-transformation.webp"
-              alt="Award Badge"
+              alt="Marketing Audit"
               className="w-full h-auto rounded-lg object-cover"
             />
           </div>

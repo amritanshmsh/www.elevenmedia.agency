@@ -12,25 +12,23 @@ export default function YourGrowth() {
           <img
             src="/istockphoto-1224586881-612x612.jpg"
             alt="Team Meeting"
-            className="w-full max-w-sm rounded-lg shadow-lg relative z-10"
+            className="w-full max-w-lg rounded-lg shadow-xl relative z-10 border-4 border-purple-300"
           />
         </div>
 
         {/* Content (now on the right) */}
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-            Your compounding growth curve begins here.
+            Build Your Growth Flywheel With Eleven.
           </h2>
           <p className="text-lg text-gray-600 mb-4">
-            Enable your team with expert growth strategy, planning, and leadership from a proven growth marketing process and team.
-            We have full-stack skills and technical expertise, so we’re not afraid to get in the weeds.
+            Unlock unstoppable momentum with our expert-crafted growth systems. We align your marketing, design, and strategy so every move compounds over time.
           </p>
           <p className="text-lg text-gray-600 mb-8">
-            This includes things like rapid message testing, building amazingly effective web pages, usability testing, ad optimization, A/B testing, and multivariate testing.
-            It’s time to move beyond simply implementing tactics and start designing the right process with the right growth strategy.
+            From lightning-fast A/B testing to performance-driven web design, paid ad optimization, and multivariate experimentation — we don’t just execute, we engineer success.
           </p>
           <a href="/services" className="inline-flex items-center text-purple-700 font-semibold hover:underline">
-            Learn more about our services <span className="ml-2">&rarr;</span>
+            Explore Our Services <span className="ml-2">&rarr;</span>
           </a>
         </div>
       </div>

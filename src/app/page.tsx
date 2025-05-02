@@ -4,9 +4,10 @@ import GetAudited from "./Components/GetAudited";
 import Hero from "./Components/Hero";
 import Storyline from "./Components/Storyline";
 import Testimonials from "./Components/Testimonals";
+import Timeline from "./Components/Timeline";
 import WhatWeDo from "./Components/Whatwedo";
 import YourGrowth from "./Components/YourGrowth";
-
+import ServicesPage from './services/page';
 
 
 
@@ -16,11 +17,13 @@ export default function Home() {
      <Hero />
      <Storyline />
      <GetAudited />
-     <YourGrowth />
      <WhatWeDo />
+     <YourGrowth />
      <CaseStudy />
+     <Timeline />
      <Testimonials />
-     <Blogs />
+      <ServicesPage />
+     {/* <Blogs /> */}
 
     </div>
   );
