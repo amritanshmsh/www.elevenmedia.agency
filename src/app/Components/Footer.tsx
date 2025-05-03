@@ -48,7 +48,7 @@ export default function Footer() {
   
         {/* Decorative line + final credit */}
         <div className="mt-12 border-t border-purple-700 pt-4 text-center text-purple-300 text-sm">
-          © {new Date().getFullYear()} Eleven | We’re a division of Conatus Bharat!
+          © {new Date().getFullYear()} Eleven | All Rights Reserved 
         </div>
   
         {/* Floating background shapes */}

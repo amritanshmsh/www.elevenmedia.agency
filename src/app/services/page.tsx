@@ -4,97 +4,113 @@ export default function ServicesPage() {
       title: "Social Media Strategy",
       description: "We design data-driven strategies tailored to your audience, ensuring your brand voice cuts through the noise on every platform.",
       points: ["Platform analysis", "Audience segmentation", "Content planning roadmap"],
-      image: "/images/service-strategy.jpg"
+      image: "/images/service-strategy.jpg",
+      slug: "social-media-strategy"
     },
     {
       title: "Content Creation",
       description: "Our creative team delivers scroll-stopping visuals, videos, and posts that drive engagement and reflect your brand’s unique identity.",
       points: ["Branded graphics & videos", "Reels, TikToks, shorts", "Engaging captions & copy"],
-      image: "/images/service-content.jpg"
+      image: "/images/service-content.jpg",
+      slug: "content-creation"
     },
     {
       title: "Paid Ads Management",
       description: "We manage high-ROI ad campaigns across social, search, and display networks, optimizing every dollar spent.",
       points: ["Ad targeting & retargeting", "A/B ad testing", "Budget optimization"],
-      image: "/images/service-ads.jpg"
+      image: "/images/service-ads.jpg",
+      slug: "paid-ads-management"
     },
     {
       title: "Website Creation",
       description: "We craft beautiful, fast, and conversion-focused websites that turn visitors into loyal customers.",
       points: ["Custom design", "SEO-ready build", "Mobile-first, responsive"],
-      image: "/images/service-website.jpg"
+      image: "/images/service-website.jpg",
+      slug: "website-creation"
     },
     {
       title: "Social Media Management",
       description: "Our team handles daily posting, community engagement, and reputation management so you stay top-of-mind.",
       points: ["Content calendar management", "Community moderation", "Performance monitoring"],
-      image: "/images/service-management.jpg"
+      image: "/images/service-management.jpg",
+      slug: "social-media-management"
     },
     {
       title: "Storytelling & Brand Narratives",
       description: "We help shape your brand’s story, building emotional connections and creating a lasting impression.",
       points: ["Brand voice development", "Narrative crafting", "Emotional hooks"],
-      image: "/images/service-storytelling.jpg"
+      image: "/images/service-storytelling.jpg",
+      slug: "storytelling-brand-narratives"
     },
     {
       title: "Ad Creation",
       description: "We create high-performing ad creatives that grab attention and drive action, from static banners to animated videos.",
       points: ["Copywriting", "Design & animation", "Creative testing"],
-      image: "/images/service-adcreation.jpg"
+      image: "/images/service-adcreation.jpg",
+      slug: "ad-creation"
     },
     {
       title: "Influencer Marketing",
       description: "We connect you with authentic influencers who can amplify your brand’s reach and credibility.",
       points: ["Influencer identification", "Campaign management", "Performance tracking"],
-      image: "/images/service-influencer.jpg"
+      image: "/images/service-influencer.jpg",
+      slug: "influencer-marketing"
     },
     {
       title: "SEO & Website Optimization",
       description: "We boost your search visibility with on-page SEO, technical audits, and continuous site improvements.",
       points: ["Keyword research", "On-page & technical SEO", "Page speed & UX improvements"],
-      image: "/images/service-seo.jpg"
+      image: "/images/service-seo.jpg",
+      slug: "seo-website-optimization"
     },
     {
       title: "Email Marketing",
       description: "We craft targeted, automated email sequences that nurture leads and keep customers engaged.",
       points: ["Segmentation & automation", "Design & copywriting", "Performance tracking"],
-      image: "/images/service-email.jpg"
+      image: "/images/service-email.jpg",
+      slug: "email-marketing"
     },
     {
       title: "Video Production",
       description: "We produce stunning brand videos, explainers, and social clips that captivate your audience.",
       points: ["Scriptwriting", "Filming & editing", "Platform-optimized delivery"],
-      image: "/images/service-video.jpg"
+      image: "/images/service-video.jpg",
+      slug: "video-production"
     },
     {
       title: "Community Management",
       description: "We build and maintain vibrant brand communities, ensuring loyal engagement and fast responses.",
       points: ["Group & forum moderation", "Engagement strategies", "Community analytics"],
-      image: "/images/service-community.jpg"
+      image: "/images/service-community.jpg",
+      slug: "community-management"
     },
     {
       title: "Branding & Design",
       description: "We elevate your visual identity with stunning logos, cohesive brand guidelines, and striking designs.",
       points: ["Logo & identity design", "Brand guidelines", "Collateral creation"],
-      image: "/images/service-branding.jpg"
+      image: "/images/service-branding.jpg",
+      slug: "branding-design"
     },
     {
       title: "Analytics & Reporting",
       description: "We provide deep insights into performance, helping you make data-backed decisions with confidence.",
       points: ["KPI tracking", "Custom dashboards", "Monthly performance reviews"],
-      image: "/images/service-analytics.jpg"
+      image: "/images/service-analytics.jpg",
+      slug: "analytics-reporting"
     },
     {
       title: "Growth Hacking",
       description: "We apply creative, low-cost growth strategies to accelerate your brand’s reach and customer base.",
       points: ["Viral campaigns", "Referral loops", "Rapid experimentation"],
-      image: "/images/service-growth.jpg"
+      image: "/images/service-growth.jpg",
+      slug: "growth-hacking"
     },
     {
       title: "Conversion Rate Optimization",
       description: "We optimize your funnels, landing pages, and CTAs to turn more visitors into paying customers.",
       points: ["Landing page testing", "Funnel audits", "Call-to-action optimization"],
-      image: "/images/service-cro.jpg"
+      image: "/images/service-cro.jpg",
+      slug: "conversion-rate-optimization"
     }
   ];
 
@@ -120,8 +136,9 @@ export default function ServicesPage() {
 
       {services.map((service, index) => (
         <div
+          id={service.slug}
           key={index}
-          className={`group flex flex-col md:flex-row gap-8 mb-16 items-center ${
+          className={`group scroll-mt-32 flex flex-col md:flex-row gap-8 mb-16 items-center ${
             index % 2 === 1 ? "md:flex-row-reverse" : ""
           }`}
         >
@@ -146,7 +163,9 @@ export default function ServicesPage() {
           {/* Text Content */}
           <div className="motion-safe:animate-fadeIn">
             <h2 className="text-2xl md:text-3xl font-bold text-purple-700 mb-4">
-              {service.title}
+              <a href={`#${service.slug}`}>
+                {service.title}
+              </a>
             </h2>
             <p className="text-gray-700 mb-3">{service.description}</p>
             <div className="flex flex-wrap gap-2 mt-4">
@@ -156,6 +175,12 @@ export default function ServicesPage() {
                 </span>
               ))}
             </div>
+            <a
+              href="/contact"
+              className="mt-4 inline-block bg-purple-700 text-white px-6 py-2 rounded-lg hover:bg-purple-800 transition-colors duration-300"
+            >
+              Get Started
+            </a>
           </div>
         </div>
       ))}

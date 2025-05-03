@@ -1,5 +1,3 @@
-
-
 export default function YourGrowth() {
   return (
     <section className="w-full bg-white py-20 px-6">
@@ -21,15 +19,23 @@ export default function YourGrowth() {
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
             Build Your Growth Flywheel With Eleven.
           </h2>
-          <p className="text-lg text-gray-600 mb-4">
-            Unlock unstoppable momentum with our expert-crafted growth systems. We align your marketing, design, and strategy so every move compounds over time.
+          <p className="text-lg text-gray-600 mb-6">
+            Peek under the hood of our proven growth framework — strategy, creative, experimentation, and relentless optimisation — then walk away with a custom, no‑fluff action plan built just for your brand.
           </p>
-          <p className="text-lg text-gray-600 mb-8">
-            From lightning-fast A/B testing to performance-driven web design, paid ad optimization, and multivariate experimentation — we don’t just execute, we engineer success.
-          </p>
-          <a href="/services" className="inline-flex items-center text-purple-700 font-semibold hover:underline">
-            Explore Our Services <span className="ml-2">&rarr;</span>
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="/process"
+              className="inline-flex items-center justify-center rounded-full bg-purple-700 px-6 py-3 text-sm font-semibold text-white shadow hover:bg-purple-800 transition"
+            >
+              Our Process
+            </a>
+            <a
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-full border border-purple-700 px-6 py-3 text-sm font-semibold text-purple-700 hover:bg-purple-50 transition"
+            >
+              Get Your Free Action Plan
+            </a>
+          </div>
         </div>
       </div>
     </section>
