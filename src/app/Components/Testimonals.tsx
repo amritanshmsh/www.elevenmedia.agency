@@ -10,28 +10,28 @@ export default function Testimonials() {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Testimonial 1 */}
+          {/* Testimonial 4 */}
           <div className="bg-purple-50 rounded-lg shadow p-6 text-left">
             <p className="text-gray-700 mb-4 italic">
-              “Eleven transformed our digital presence. Their team’s creativity and precision drove a 2x increase in leads within just 6 weeks.”
+              “Partnering with Eleven helped modernize our school’s communications and outreach. Parents and students are now more engaged than ever.”
             </p>
-            <div className="font-semibold text-purple-700">Jane Smith, CMO, Brand A</div>
+            <div className="font-semibold text-purple-700">Mr. Rajaneesh Singh, Principal, JS Public</div>
           </div>
 
-          {/* Testimonial 2 */}
+          {/* Testimonial 5 */}
           <div className="bg-purple-50 rounded-lg shadow p-6 text-left">
             <p className="text-gray-700 mb-4 italic">
-              “Working with Eleven felt like adding a world-class growth team to our company. We saw immediate improvements in ad performance and ROI.”
+              “We trusted Eleven with a complex product launch, and they delivered beyond expectations. The buzz they created gave us a huge first-mover advantage.”
             </p>
-            <div className="font-semibold text-purple-700">John Doe, CEO, Brand B</div>
+            <div className="font-semibold text-purple-700">Sofia Ahmed, Product Manager, TechNova</div>
           </div>
 
-          {/* Testimonial 3 */}
+          {/* Testimonial 6 */}
           <div className="bg-purple-50 rounded-lg shadow p-6 text-left">
             <p className="text-gray-700 mb-4 italic">
-              “The Eleven team is sharp, responsive, and deeply invested in our success. We couldn’t imagine a better growth partner.”
+              “Eleven’s storytelling magic helped us connect emotionally with our audience. Their campaigns doubled our engagement rates in under two months.”
             </p>
-            <div className="font-semibold text-purple-700">Emily Johnson, Founder, Brand C</div>
+            <div className="font-semibold text-purple-700">Carlos Ramirez, Marketing Director, FreshLeaf Organics</div>
           </div>
         </div>
       </div>

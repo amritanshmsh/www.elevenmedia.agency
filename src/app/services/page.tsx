@@ -138,7 +138,7 @@ export default function ServicesPage() {
         <div
           id={service.slug}
           key={index}
-          className={`group scroll-mt-32 flex flex-col md:flex-row gap-8 mb-16 items-center ${
+          className={`group flex flex-col md:flex-row gap-8 mb-16 items-center ${
             index % 2 === 1 ? "md:flex-row-reverse" : ""
           }`}
         >
@@ -176,10 +176,10 @@ export default function ServicesPage() {
               ))}
             </div>
             <a
-              href="/contact"
+              href={`#${service.slug}`}
               className="mt-4 inline-block bg-purple-700 text-white px-6 py-2 rounded-lg hover:bg-purple-800 transition-colors duration-300"
             >
-              Get Started
+              Explore
             </a>
           </div>
         </div>

@@ -1,0 +1,101 @@
+[
+    {
+      "slug": "brand-x-300-growth",
+      "title": "Brand X: 300 % Growth in 90 Days",
+      "subtitle": "How a niche DTC startup exploded with data‑driven creative and micro‑pivot loops.",
+      "author": "Laura Patel",
+      "date": "2025-05-03",
+      "readingTime": "7 min read",
+      "heroImage": "/process-discover.jpg",
+      "sections": [
+        {
+          "heading": "Setting the Stage",
+          "content": "Brand X came to us with a fantastic product and a stagnant social presence...",
+          "image": "/process-discover.jpg"
+        },
+        {
+          "heading": "Tactic Stack",
+          "content": "We deployed rapid‑fire A/B tests (50+ in two weeks), hyper‑segmented paid funnels, and community seeding on Discord...",
+          "quote": "“Our hook‑rate jumped from 10 % to 38 % after the first creative pivot.”"
+        },
+        {
+          "heading": "Results",
+          "content": "90‑day highlights: 300 % lift in CTR, 2.5× ROAS, 3× follower engagement..."
+        },
+        {
+          "heading": "Challenges Faced",
+          "content": "Brand X struggled with fragmented messaging, inconsistent visual identity, and poor retention despite strong initial reach. They lacked unified KPIs and their analytics stack was underutilized."
+        },
+        {
+          "heading": "Solutions Deployed",
+          "content": "We integrated cross-platform analytics, set up centralized dashboards, and established a single source of truth for KPIs. The creative strategy was realigned to emphasize storytelling and emotional triggers."
+        }
+      ]
+    },
+    {
+      "slug": "brew-co-viral-rebrand",
+      "title": "Brew Co: From Local Roaster to Viral Coffee Darling",
+      "subtitle": "A brand refresh, TikTok storytelling, and influencer collabs brewed a global fan‑base.",
+      "author": "Marcus Jin",
+      "date": "2025-04-14",
+      "readingTime": "6 min read",
+      "heroImage": "/process-discover.jpg",
+      "sections": [
+        {
+          "heading": "Re‑Brand Sprint",
+          "content": "We overhauled packaging, color palette, and voice—leaning into quirky latte art memes...",
+          "image": "/process-discover.jpg"
+        },
+        {
+          "heading": "Influencer Cascade",
+          "content": "Seven micro‑influencers seeded the first wave; then TikTok’s coffee niche did the heavy lift...",
+          "quote": "“Brew Co went from 8K to 120K followers in 30 days.”"
+        },
+        {
+          "heading": "Key Metrics",
+          "content": "Average order value +42 %, UGC volume +600 %, hashtag reach 19 M impressions..."
+        },
+        {
+          "heading": "Customer Journey Overhaul",
+          "content": "We redesigned the end-to-end customer journey, from first-touch social impressions to post-purchase follow-up emails. Customer feedback loops were built directly into the social campaigns."
+        },
+        {
+          "heading": "Organic vs Paid Mix",
+          "content": "By shifting budget towards high-performing organic posts and leveraging boosted influencer content, we increased efficiency and amplified authentic engagement."
+        }
+      ]
+    },
+    {
+      "slug": "neo-fit-app-launch",
+      "title": "NeoFit App: 50K Downloads in Two Weeks with Zero Paid Media",
+      "subtitle": "A teaser campaign, waitlist gamification, and creator partnerships turned hype into installs.",
+      "author": "Sofia Ahmed",
+      "date": "2025-03-22",
+      "readingTime": "8 min read",
+      "heroImage": "/process-discover.jpg",
+      "sections": [
+        {
+          "heading": "Gamified Waitlist",
+          "content": "We built a referral leaderboard: every share earned early‑access badges and in‑app perks...",
+          "image": "/process-discover.jpg"
+        },
+        {
+          "heading": "Creator Blitz",
+          "content": "Fitness YouTubers teased exclusive challenges; Instagram coaches hosted live workouts...",
+          "quote": "“Our launch livestream peaked at 18 K concurrent viewers.”"
+        },
+        {
+          "heading": "Launch Numbers",
+          "content": "50 K downloads, 25 K active users day one, App Store #2 in Health & Fitness..."
+        },
+        {
+          "heading": "Tech Stack Integration",
+          "content": "We connected the waitlist system with the app backend to ensure seamless onboarding at launch. Automated triggers rewarded referrals in real time."
+        },
+        {
+          "heading": "Post-Launch Optimization",
+          "content": "Continuous monitoring allowed us to identify churn risk cohorts, optimize push notification cadences, and introduce in-app challenges to maintain daily active users."
+        }
+      ]
+    }
+  ]

@@ -6,80 +6,45 @@ const steps = [
   {
     title: "01 — Discover & Diagnose",
     bold: "We start with radical empathy.",
-    desc: "Deep brand audits, market research, competitive mapping, and social listening reveal where you stand and where the whitespace lives. We surface every hidden insight before we lift a pixel.",
-    image: "/images/process-discover.jpg",
-    bullets: [
-      "In‑depth social listening dashboard",
-      "Competitor gap matrix",
-      "Brand sentiment heat‑map"
-    ]
+    desc: "Deep brand audits, market research, competitive mapping, and social listening reveal where you stand and where the whitespace lives.",
+    image: "/process-discover.jpg",
   },
   {
     title: "02 — Strategy Blueprint",
     bold: "Data‑backed strategy, zero guesswork.",
-    desc: "We translate insights into an airtight roadmap: personas, channel mix, content pillars, voice guidelines, and a 90‑day calendar that syncs every touchpoint.",
+    desc: "Audience personas, channel mix, brand voice, content pillars, and a cross‑platform calendar engineered to hit the right people at the right moment.",
     image: "/images/process-strategy.jpg",
-    bullets: [
-      "Persona‑driven channel plan",
-      "Content‑pillar matrix",
-      "90‑day rollout calendar"
-    ]
   },
   {
     title: "03 — Creative & A/B Labs",
     bold: "Ideas are nothing without experiments.",
-    desc: "Our studio cranks out thumb‑stoppers while the Growth Lab stress‑tests hooks, CTAs, and formats in rapid micro‑cycles to find the unbeatable combo.",
+    desc: "Our studio churns out thumb‑stoppers—videos, carousels, reels—while the growth lab runs multivariate A/B tests on hooks, CTAs, and formats to unearth winners fast.",
     image: "/images/process-ab.jpg",
-    bullets: [
-      "Rapid mock‑up sprints",
-      "Hook & headline variations",
-      "Real‑time performance board"
-    ]
   },
   {
     title: "04 — Launch & Learn",
     bold: "Every post is a data point.",
-    desc: "We deploy, monitor in real‑time, and pivot on micro‑signals—CPM dips, retention spikes, comment sentiment—nothing escapes our war‑room dashboards.",
+    desc: "We deploy, monitor in real‑time, and pivot on micro‑signals: CPM fluctuations, hook drop‑off, sentiment spikes. Nothing ships without a metric to own.",
     image: "/images/process-launch.jpg",
-    bullets: [
-      "24‑hour feedback loop",
-      "Live metric war‑room",
-      "Micro‑pivot protocol"
-    ]
   },
   {
     title: "05 — Scale & Repeat",
     bold: "Double‑down on what moves the needle.",
-    desc: "Winning creatives get budget muscle, new audiences, and retargeting layers. Monthly executive reports translate raw data into clear board‑room wins.",
+    desc: "Winning creatives get production muscle, budgets shift to high‑ROI channels, retargeting kicks in, and monthly reports translate data into board‑room clarity.",
     image: "/images/process-scale.jpg",
-    bullets: [
-      "Budget reallocation engine",
-      "Winner creative cloning",
-      "Executive scorecard report"
-    ]
   },
   {
     title: "06 — Community & Retention",
     bold: "Fans are the best funnel.",
-    desc: "We turn followers into evangelists with gated groups, surprise‑and‑delight drops, and loyalty ladders that keep the buzz compounding.",
+    desc: "We nurture loyalty with two‑way conversations, gated communities, and surprise‑and‑delight moments that transform followers into evangelists.",
     image: "/images/process-community.jpg",
-    bullets: [
-      "Private insider groups",
-      "Surprise & delight drops",
-      "Loyalty‑ladder system"
-    ]
   },
   {
     title: "07 — Intelligence Loop",
     bold: "Insights fuel the next iteration.",
-    desc: "Quarterly growth summits refine the roadmap while our edge‑tracking radar hunts for next‑gen opportunities before competitors blink.",
+    desc: "Monthly growth summits turn raw data into quarterly roadmaps, ensuring the engine never idles and your edge stays razor‑sharp.",
     image: "/images/process-intel.jpg",
-    bullets: [
-      "Quarterly growth summits",
-      "Insights‑to‑roadmap pipeline",
-      "Continuous edge tracking"
-    ]
-  }
+  },
 ];
 
 export default function ProcessPage() {
@@ -147,13 +112,11 @@ export default function ProcessPage() {
               </h2>
               <p className="text-2xl md:text-3xl font-bold mb-4">{step.bold}</p>
               <p className="text-purple-200 leading-relaxed">{step.desc}</p>
-              {step.bullets && (
-                <ul className="mt-4 space-y-1 text-sm text-purple-300">
-                  {step.bullets.map((b) => (
-                    <li key={b}>✓ {b}</li>
-                  ))}
-                </ul>
-              )}
+              <ul className="mt-4 space-y-1 text-sm text-purple-300">
+                <li>✓ KPI owner assigned</li>
+                <li>✓ Tool stack synced</li>
+                <li>✓ Timeline locked</li>
+              </ul>
             </div>
           </motion.div>
         ))}
