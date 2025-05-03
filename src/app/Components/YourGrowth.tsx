@@ -44,7 +44,7 @@ export default function YourGrowth() {
               Our Process
             </a>
             <a
-              href="/contact"
+              href="/contactform"
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-purple-700 border border-purple-200 shadow hover:bg-purple-50 transition"
             >
               Get Your Free Action Plan

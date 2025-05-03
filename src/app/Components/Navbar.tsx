@@ -9,9 +9,10 @@ export default function Navbar() {
   const links = [
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
-    { name: "Results", href: "/results" },
-    { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Process", href: "/process" },
+    { name: "Case Studies", href: "/#casestudies" },
+    { name: "Timeline", href: "/#timeline" },
+    { name: "Book Call", href: "/contactform" },
   ];
 
   return (
@@ -27,7 +28,7 @@ export default function Navbar() {
 
         {/* Center nav (desktop) */}
         <div className="hidden md:flex gap-10 text-sm font-medium">
-          {links.slice(0, 4).map((l) => (
+          {links.slice(0, 5).map((l) => (
             <Link
               key={l.name}
               href={l.href}
@@ -41,10 +42,10 @@ export default function Navbar() {
 
         {/* Right button (desktop) */}
         <Link
-          href="/contact"
+          href="/contactform"
           className="hidden md:inline-block rounded-full bg-purple-600 px-5 py-2 text-sm font-semibold text-white hover:bg-purple-700 transition-colors"
         >
-          Contact
+          Book Call
         </Link>
 
         {/* Hamburger (mobile) */}
@@ -72,11 +73,11 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/contactform"
               className="mt-2 rounded-full bg-purple-600 px-5 py-2 text-center text-sm font-semibold text-white hover:bg-purple-700"
               onClick={() => setOpen(false)}
             >
-              Contact
+              Book Call
             </Link>
           </div>
         </div>

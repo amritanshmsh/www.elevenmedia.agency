@@ -28,7 +28,7 @@ export default function CallToAction() {
         </div>
         <div className="md:w-1/3 flex justify-center md:justify-end">
           <motion.a
-            href="/contact"
+            href="/contactform"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-block rounded-full bg-white text-purple-800 font-semibold px-6 py-3 shadow-lg hover:bg-purple-50 transition"

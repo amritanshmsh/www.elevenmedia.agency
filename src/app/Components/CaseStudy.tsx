@@ -5,7 +5,7 @@ import caseStudies from "@/data/casestudy.json";
 
 export default function CaseStudy() {
   return (
-    <section className="w-full bg-gray-50 py-20 px-6">
+    <section id="casestudies" className="w-full bg-gray-50 py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
           Our Success Stories

@@ -37,7 +37,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.6 }}
           >
             <a
-              href="/contact"
+              href="/contactform"
               className="inline-flex items-center justify-center rounded-full bg-purple-700 px-8 py-3 text-sm font-semibold text-white shadow hover:bg-purple-800"
             >
               Kick‑Start with Eleven

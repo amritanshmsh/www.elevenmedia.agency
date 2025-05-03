@@ -45,7 +45,7 @@ export default function Timeline() {
   ];
 
   return (
-    <section className="w-full bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 py-20 px-6">
+    <section id="timeline" className="w-full bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 py-20 px-6">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-12">
           Client Timeline to Success

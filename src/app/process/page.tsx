@@ -125,7 +125,7 @@ export default function ProcessPage() {
       {/* CTA */}
       <section className="py-24 text-center">
         <motion.a
-          href="/contact"
+          href="/contactform"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
