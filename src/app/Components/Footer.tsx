@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="relative bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 text-white py-16 px-6">
+    <footer className="relative bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 text-white py-16 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
         {/* About Eleven */}
         <div className="md:col-span-1">
