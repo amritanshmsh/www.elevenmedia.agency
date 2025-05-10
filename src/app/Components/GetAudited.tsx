@@ -30,7 +30,11 @@ export default function GetAudited() {
             whileTap={{ scale: 0.95 }}
             className="px-8 py-4 bg-purple-700 hover:bg-purple-800 text-white font-semibold rounded-lg shadow transition duration-300"
           >
+            <a
+            href="/contactform"> 
+
             Claim Your Free Audit
+            </a>
           </motion.button>
         </motion.div>
 

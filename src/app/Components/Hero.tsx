@@ -43,7 +43,7 @@ export default function Hero() {
               Kick‑Start with Eleven
             </a>
             <a
-              href="/services"
+              href="/process"
               className="inline-flex items-center justify-center rounded-full border border-purple-700 px-8 py-3 text-sm font-semibold text-purple-700 hover:bg-purple-50"
             >
               See Our Growth Playbook
