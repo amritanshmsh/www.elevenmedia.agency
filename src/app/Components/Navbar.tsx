@@ -7,32 +7,26 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const links = [
-    { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
-    { name: "Process", href: "/process" },
-    { name: "Case Studies", href: "/#casestudies" },
-    { name: "Timeline", href: "/#timeline" },
-    { name: "Book Call", href: "/contactform" },
+    { name: "Process", href: "/#howitworks" },
+    { name: "Benefits", href: "/#whatwedo" },
+    { name: "Portfolio", href: "/#casestudies" },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white shadow-sm">
-      {/* top accent bar */}
-      <div className="h-1 w-full bg-purple-600" />
-
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+    <nav className="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md shadow-xl border-b border-gray-200">
+      <div className="mx-auto flex max-w-full items-center justify-between px-8 py-4">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-extrabold tracking-tight text-gray-900">
-          eleven<span className="text-purple-600">.</span>
+        <Link href="/" className="text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 hover:text-purple-600 transition-colors">
+          eleven<span className="text-purple-600">media</span>
         </Link>
 
         {/* Center nav (desktop) */}
-        <div className="hidden md:flex gap-10 text-sm font-medium">
-          {links.slice(0, 5).map((l) => (
+        <div className="hidden md:flex gap-6 lg:gap-8 text-base lg:text-lg font-medium absolute left-1/2 transform -translate-x-1/2">
+          {links.map((l) => (
             <Link
               key={l.name}
               href={l.href}
-              className="relative text-gray-700 hover:text-purple-700 transition-colors"
+              className="relative text-gray-700 hover:text-purple-700 transition-all duration-300 hover:scale-105"
             >
               {l.name}
               <span className="absolute inset-x-0 -bottom-1 h-0.5 origin-left scale-x-0 transform bg-purple-600 transition-transform duration-300 hover:scale-x-100" />
@@ -43,15 +37,15 @@ export default function Navbar() {
         {/* Right button (desktop) */}
         <Link
           href="/contactform"
-          className="hidden md:inline-block rounded-full bg-purple-600 px-5 py-2 text-sm font-semibold text-white hover:bg-purple-700 transition-colors"
+          className="hidden md:inline-block rounded-xl border-2 border-purple-600 bg-white px-4 lg:px-6 py-2 lg:py-3 text-base lg:text-lg font-semibold text-purple-600 hover:bg-purple-600 hover:text-white shadow-lg hover:shadow-purple-500/25 hover:scale-105 transition-all duration-300"
         >
-          Book Call
+          Free Audit
         </Link>
 
         {/* Hamburger (mobile) */}
         <button
           onClick={() => setOpen(!open)}
-          className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 md:hidden"
+          className="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-purple-50 hover:text-purple-700 md:hidden transition-colors"
           aria-label="Toggle menu"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -60,13 +54,13 @@ export default function Navbar() {
 
       {/* Mobile dropdown */}
       {open && (
-        <div className="border-t border-gray-200 bg-white px-6 py-4 md:hidden">
-          <div className="flex flex-col gap-2">
+        <div className="border-t border-gray-200 bg-white/95 backdrop-blur-md px-6 py-4 md:hidden">
+          <div className="flex flex-col gap-3">
             {links.map((l) => (
               <Link
                 key={l.name}
                 href={l.href}
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-purple-50"
+                className="rounded-md px-4 py-2 text-base font-medium text-gray-700 hover:bg-purple-50 hover:text-purple-700 transition-colors"
                 onClick={() => setOpen(false)}
               >
                 {l.name}
@@ -74,10 +68,10 @@ export default function Navbar() {
             ))}
             <Link
               href="/contactform"
-              className="mt-2 rounded-full bg-purple-600 px-5 py-2 text-center text-sm font-semibold text-white hover:bg-purple-700"
+              className="mt-3 rounded-xl border-2 border-purple-600 bg-white px-4 py-2 text-center text-base font-semibold text-purple-600 hover:bg-purple-600 hover:text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300"
               onClick={() => setOpen(false)}
             >
-              Book Call
+              Free Audit
             </Link>
           </div>
         </div>

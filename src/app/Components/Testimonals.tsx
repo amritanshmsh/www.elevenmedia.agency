@@ -10,28 +10,28 @@ export default function Testimonials() {
         </p>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Testimonial 4 */}
+          {/* Travel Gear Brand Testimonial */}
           <div className="bg-purple-50 rounded-lg shadow p-6 text-left">
             <p className="text-gray-700 mb-4 italic">
-              “Partnering with Eleven helped modernize our school’s communications and outreach. Parents and students are now more engaged than ever.”
+              "Our online store was dead. Eleven changed everything. We went from zero to 20 lakhs revenue in 3 months. Life-changing."
             </p>
-            <div className="font-semibold text-purple-700">Mr. Rajaneesh Singh, Principal, JS Public</div>
+            <div className="font-semibold text-purple-700">Rahul Mehta, Founder, TravelGear Pro</div>
           </div>
 
-          {/* Testimonial 5 */}
+          {/* Tote Bag Brand Testimonial */}
           <div className="bg-purple-50 rounded-lg shadow p-6 text-left">
             <p className="text-gray-700 mb-4 italic">
-              “We trusted Eleven with a complex product launch, and they delivered beyond expectations. The buzz they created gave us a huge first-mover advantage.”
+              "Stuck at 15K daily for months. Every agency failed. Eleven made us run out of stock! Now doing 1 lakh daily."
             </p>
-            <div className="font-semibold text-purple-700">Sofia Ahmed, Product Manager, TechNova</div>
+            <div className="font-semibold text-purple-700">Priya Sharma, Founder, Luxe Tote Collections</div>
           </div>
 
-          {/* Testimonial 6 */}
+          {/* Streetwear Brand Testimonial */}
           <div className="bg-purple-50 rounded-lg shadow p-6 text-left">
             <p className="text-gray-700 mb-4 italic">
-              “Eleven’s storytelling magic helped us connect emotionally with our audience. Their campaigns doubled our engagement rates in under two months.”
+              "Hit a wall at 4 lakhs monthly. Eleven's anime campaigns were brilliant. Tripled to 12 lakhs in 2 months."
             </p>
-            <div className="font-semibold text-purple-700">Carlos Ramirez, Marketing Director, FreshLeaf Organics</div>
+            <div className="font-semibold text-purple-700">Arjun Kapoor, Creative Director, Urban Threads</div>
           </div>
         </div>
       </div>

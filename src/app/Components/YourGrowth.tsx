@@ -37,12 +37,7 @@ export default function YourGrowth() {
             Peek under the hood of our proven growth framework — strategy, creative, experimentation, and relentless optimisation — then walk away with a custom, no‑fluff action plan built just for your brand.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="/process"
-              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-purple-600 to-purple-400 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:from-purple-700 hover:to-purple-500 transition"
-            >
-              Our Process
-            </a>
+           
             <a
               href="/contactform"
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-purple-700 border border-purple-200 shadow hover:bg-purple-50 transition"

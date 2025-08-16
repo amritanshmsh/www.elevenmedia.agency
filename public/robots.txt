@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Block access to admin areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.well-known/
+
+# Allow important pages
+Allow: /casestudy/
+Allow: /services/
+Allow: /contactform/
+
+# Sitemap location
+Sitemap: https://www.elevenmedia.agency/sitemap.xml

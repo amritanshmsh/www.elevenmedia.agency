@@ -2,27 +2,23 @@
 import { motion } from "framer-motion";
 
 const services = [
-  { name: "Social Media Strategy", slug: "social-media-strategy" },
-  { name: "Content Creation", slug: "content-creation" },
-  { name: "Paid Ads Management", slug: "paid-ads-management" },
   { name: "Website Creation", slug: "website-creation" },
   { name: "Social Media Management", slug: "social-media-management" },
   { name: "Storytelling & Brand Narratives", slug: "storytelling" },
-  { name: "Ad Creation", slug: "ad-creation" },
   { name: "Influencer Marketing", slug: "influencer-marketing" },
   { name: "SEO & Website Optimization", slug: "seo-optimization" },
   { name: "Email Marketing", slug: "email-marketing" },
-  { name: "Video Production", slug: "video-production" },
-  { name: "Community Management", slug: "community-management" },
   { name: "Branding & Design", slug: "branding-design" },
   { name: "Analytics & Reporting", slug: "analytics-reporting" },
   { name: "Growth Hacking", slug: "growth-hacking" },
-  { name: "Conversion Rate Optimization", slug: "conversion-optimization" }
+  { name: "Conversion Rate Optimization", slug: "conversion-optimization" },
+  { name: "Media Buying", slug: "media-buying" },
+  { name: "Video Editing", slug: "video-editing" }
 ];
 
 export default function WhatWeDo() {
   return (
-    <section className="w-full bg-white py-20 px-6 text-center">
+    <section id="whatwedo" className="w-full bg-white py-20 px-6 text-center">
       <motion.div
         className="max-w-7xl mx-auto"
         initial={{ opacity: 0, y: 30 }}
@@ -41,23 +37,22 @@ export default function WhatWeDo() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
-          {services.map((service, index) => (
-            <motion.a
-              key={index}
-              href={`/services#${service.slug}`}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.95 }}
-              className={`px-6 py-3 rounded-full cursor-pointer font-medium transition-colors ${
-                index % 3 === 0
-                  ? "bg-purple-700 text-white hover:bg-purple-800"
-                  : index % 3 === 1
-                  ? "bg-purple-100 text-purple-700 hover:bg-purple-200"
-                  : "bg-purple-200 text-purple-800 hover:bg-purple-300"
-              }`}
-            >
-              {service.name}
-            </motion.a>
-          ))}
+          {services.map((service, index) => {
+            // Create alternating rhythm: even indices get dark purple, odd indices get light purple
+            const styleClass = index % 2 === 0
+              ? "bg-purple-700 text-white"
+              : "bg-purple-100 text-purple-700";
+
+            return (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                className={`px-6 py-3 rounded-full font-medium transition-colors ${styleClass}`}
+              >
+                {service.name}
+              </motion.div>
+            );
+          })}
         </div>
       </motion.div>
     </section>
